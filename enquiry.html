@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page display properly on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Cozy Book Café - Enquiry</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+
+<body class="enquiry-page">
+
+    <!-- Header section containing the café logo, title and navigation -->
+    <header>
+
+        <!-- Café logo -->
+        <img src="_images/logo.png"
+             srcset="_images/logo-320.jpg 320w, _images/logo-640.jpg 640w, _images/logo-1024.jpg 1024w" sizes="(max-width: 700px) 120px, 150px" alt="The Cozy Book Café Logo"
+             width="200">
+
+        <!-- Page heading -->
+        <h1>Enquiries</h1>
+
+        <!-- Main navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Books & Café</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main content containing the enquiry form -->
+    <main>
+
+        <!-- Section explaining the purpose of the enquiry form -->
+        <section>
+
+            <h2>Send Us an Enquiry</h2>
+
+            <p>
+                Complete the form below if you have any questions about
+                our books, café menu or events.
+            </p>
+
+            <!-- Enquiry form for customers to send their questions -->
+            <form>
+
+                <!-- Customer's full name -->
+                <label for="name">Full Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <br><br>
+
+                <!-- Customer's email address -->
+                <label for="email">Email Address:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+                <!-- Customer's phone number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone">
+
+                <br><br>
+
+                <!-- Allows the customer to select the type of enquiry -->
+                <label for="enquiry">Type of Enquiry:</label>
+
+                <select id="enquiry" name="enquiry">
+
+                    <option value="books">Books</option>
+                    <option value="menu">Café Menu</option>
+                    <option value="events">Events</option>
+                    <option value="general">General Enquiry</option>
+
+                </select>
+
+                <br><br>
+
+                <!-- Text area where the customer can type their message -->
+                <label for="message">Message:</label>
+
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          cols="40"
+                          required></textarea>
+
+                <br><br>
+
+                <!-- Buttons used to submit or clear the form -->
+                <input type="submit" value="Submit Enquiry">
+                <input type="reset" value="Clear">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer containing the copyright information -->
+    <footer>
+        <p>&copy; 2026 The Cozy Book Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+
+</body>
+</html>
